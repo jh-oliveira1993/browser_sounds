@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IE Classic Sounds — Opções</title>
+    <link rel="stylesheet" href="options.css" />
+    <script src="options.js" defer></script>
+  </head>
+  <body>
+    <h1>IE Classic Sounds — Opções</h1>
+
+    <section
+      id="global"
+      aria-label="Opções gerais"
+      style="display: flex; flex-direction: column"
+    >
+      <label for="soundpack">Pacote de sons</label>
+      <select id="soundpack">
+        <option value="ie6" selected>Internet Explorer 6 (Windows XP)</option>
+        <option value="ie7">Internet Explorer 7–9 (Windows Vista/7)</option>
+      </select>
+      <label for="globalVolume">Volume geral</label>
+      <input
+        id="globalVolume"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value="100"
+        data-default="100"
+      />
+    </section>
+
+    <section
+      id="navigationStart"
+      aria-label="Navegação iniciada (clique do IE)"
+      style="display: flex; flex-direction: column"
+    >
+      <h2>Navegação iniciada (clique do IE)</h2>
+      <input
+        type="checkbox"
+        id="navigation-start-toggle"
+        class="toggle"
+        checked
+        data-default="true"
+      />
+      <label for="navigation-start-toggle">Ativar este som</label>
+      <label for="navigation-start-volume">Volume</label>
+      <input
+        id="navigation-start-volume"
+        class="volume"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value="100"
+        data-default="100"
+      />
+      <button class="test">Testar som</button>
+    </section>
+
+    <section
+      id="tabSwitch"
+      aria-label="Troca de aba"
+      style="display: flex; flex-direction: column"
+    >
+      <h2>Troca de aba</h2>
+      <input
+        type="checkbox"
+        id="tab-switch-toggle"
+        class="toggle"
+        checked
+        data-default="true"
+      />
+      <label for="tab-switch-toggle">Ativar este som</label>
+      <label for="tab-switch-volume">Volume</label>
+      <input
+        id="tab-switch-volume"
+        class="volume"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value="100"
+        data-default="100"
+      />
+      <button class="test">Testar som</button>
+    </section>
+
+    <section
+      id="tabNew"
+      aria-label="Nova aba"
+      style="display: flex; flex-direction: column"
+    >
+      <h2>Nova aba</h2>
+      <input
+        type="checkbox"
+        id="tab-new-toggle"
+        class="toggle"
+        checked
+        data-default="true"
+      />
+      <label for="tab-new-toggle">Ativar este som</label>
+      <label for="tab-new-volume">Volume</label>
+      <input
+        id="tab-new-volume"
+        class="volume"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value="100"
+        data-default="100"
+      />
+      <button class="test">Testar som</button>
+    </section>
+
+    <section
+      id="tabClose"
+      aria-label="Aba fechada"
+      style="display: flex; flex-direction: column"
+    >
+      <h2>Aba fechada</h2>
+      <input
+        type="checkbox"
+        id="tab-close-toggle"
+        class="toggle"
+        checked
+        data-default="true"
+      />
+      <label for="tab-close-toggle">Ativar este som</label>
+      <label for="tab-close-volume">Volume</label>
+      <input
+        id="tab-close-volume"
+        class="volume"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value="100"
+        data-default="100"
+      />
+      <button class="test">Testar som</button>
+    </section>
+
+    <section id="save-reset" aria-label="Salvar ou restaurar opções">
+      <button id="save">Salvar opções</button>
+      <button id="reset">Restaurar padrões</button>
+      <p style="display: none" role="alert" id="save-confirm"></p>
+      <p style="display: none" role="alert" id="reset-confirm"></p>
+    </section>
+  </body>
+</html>
